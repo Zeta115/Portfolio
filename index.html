@@ -4,87 +4,118 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio Pol Pallares Mur</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #0f0f0f;
-      color: #f5f5f5;
-    }
-    header {
-      background-color: #1a1a1a;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    .container {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .project {
-      background-color: #1f1f1f;
-      margin-bottom: 2rem;
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    }
-    .project h2 {
-      margin-top: 0;
-      color: #ffa500;
-    }
-    .project p {
-      line-height: 1.6;
-    }
-    .project .tags {
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      color: #ccc;
-    }
-    .section {
-      margin-top: 3rem;
-    }
-    .section h2 {
-      color: #00ced1;
-    }
-    ul.skills {
-      list-style: none;
-      padding: 0;
-    }
-    ul.skills li {
-      background: #2a2a2a;
-      margin: 0.5rem 0;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      display: inline-block;
-      margin-right: 0.5rem;
-    }
-    .contact a, .social a {
-      color: #ffa500;
-      text-decoration: none;
-      display: inline-block;
-      margin-right: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #1a1a1a;
-      font-size: 0.9rem;
-      color: #888;
-    }
-  </style>
-</head>
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    color: #f5f5f5;
+  }
+
+  header {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    flex-grow: 1; /* Hace que el título ocupe el espacio disponible */
+  }
+
+  /* Contenedor flexbox */
+  .header-content {
+    display: flex;
+    justify-content: center; /* Centra los elementos en el header */
+    align-items: center; /* Alinea verticalmente */
+  }
+
+  .header-image {
+    max-width: 200px;
+    border-radius: 20px;
+    margin-left: 20px; /* Espacio entre la imagen y el título */
+  }
+
+  .container {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .project {
+    background-color: #1f1f1f;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+
+  .project h2 {
+    margin-top: 0;
+    color: #ffa500;
+  }
+
+  .project p {
+    line-height: 1.6;
+  }
+
+  .project .tags {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+
+  .section {
+    margin-top: 3rem;
+  }
+
+  .section h2 {
+    color: #00ced1;
+  }
+
+  ul.skills {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul.skills li {
+    background: #2a2a2a;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+
+  .contact a, .social a {
+    color: #ffa500;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    font-size: 0.9rem;
+    color: #888;
+  }
+</style>
+
 <body>
   <header>
-    <h1>Portafolio de Proyectos Pol Pallares Mur</h1>
+    <div class="header-content">
+      <h1>Portafolio de Proyectos Pol Pallares Mur</h1>
+      <img src="97937df5-dfed-4344-aa4b-2488f11f824e.jpg" alt="Logo de Portafolio" class="header-image" />
+    </div>
     <p>Diseñador de videojuegos con enfoque en narrativa, UI y diseño de niveles</p>
-          <img src="97937df5-dfed-4344-aa4b-2488f11f824e.jpg"style="max-width:200px; border-radius: 20px; margin-top: 10px;" />
-
   </header>
+</body>
+
   <div class="container">
 
     <!-- Proyectos -->
